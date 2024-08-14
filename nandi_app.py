@@ -26,8 +26,8 @@ def logout():
 
 role = st.session_state.role
 
-logout_page = st.Page(logout, title="Log out")
-about = st.Page("about.py", title="About")
+logout_page = st.Page(logout, title="Log out", icon="⛔️")
+about = st.Page("about.py", title="About", icon="🔈️")
 request_1 = st.Page(
     "User/request_1.py",
     title="Dataframe 1",
@@ -35,16 +35,18 @@ request_1 = st.Page(
 )
 request_2 = st.Page(
     "User/request_2.py",
-    title="A Map of All Coops"
+    title="A Map of All Coops",
+    icon="🌍️"
 )
 request_3 = st.Page(
     "User/request_3.py",
     title="Graphs & Charts",
-    icon=""
+    icon="👉️"
 )
 request_4 = st.Page(
     "User/request_4.py",
-    title="Selection App"
+    title="Selection App",
+    icon="👌️"
 )
 respond_1 = st.Page(
     "Admin/respond_1.py",
@@ -57,6 +59,7 @@ respond_2 = st.Page(
 admin_1 = st.Page(
     "Super Admin/admin_1.py",
     title="Dataframe 3",
+    icon="🎱️"
     default=(role == "Super Admin"),
 )
 admin_2 = st.Page("Super Admin/admin_2.py", title="Advanced Graphs & Charts")

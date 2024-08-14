@@ -6,7 +6,7 @@ import plotly.express as px
 
 
 st.title(' A Map of All Coops')
-st.write("Amazing!")
+st.subheader("Different types of Maps")
 
 main_df = pd.read_csv('Nandi Marketplace Seller Details.csv')
 

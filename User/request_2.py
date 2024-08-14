@@ -40,13 +40,16 @@ fig_pl = px.scatter_mapbox(main_df, lon=main_df['longitude'], lat=main_df['latit
 fig_pl.update_layout(mapbox_style="open-street-map")
 fig_pl.update_layout(margin={"r":0, "t":50, "l":0, "b":10})
 
-t1, t2, = st.tabs(["Plotly Map", "pyDeck Map"])
+t1, t2, t3 = st.tabs(["Plotly Map", "pyDeck Map", "st Map"])
 with t1:
     st.plotly_chart(fig_pl, use_container_width=True)
 
 with t2:
     st.pydeck_chart(pdk.Deck(width="100%", height=700, initial_view_state=sf_initial_view, layers = [sp_layer]), use_container_width=True)
 
+with t3:
+    main_df = main_df.dropna(subset=['latitude', 'longitude'])
+    st.map(main_df)
     
 
 st.write(f"You are logged in as {st.session_state.role}.")  

@@ -31,6 +31,7 @@ about = st.Page("about.py", title="About", icon="🔈️")
 request_1 = st.Page(
     "User/request_1.py",
     title="Dataframe 1",
+    icon="🎱️",
     default=(role == "User"),
 )
 request_2 = st.Page(
@@ -51,6 +52,7 @@ request_4 = st.Page(
 respond_1 = st.Page(
     "Admin/respond_1.py",
     title="Dataframe 2",
+    icon="🎱️",
     default=(role == "Admin"),
 )
 respond_2 = st.Page(

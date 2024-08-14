@@ -59,8 +59,8 @@ respond_2 = st.Page(
 admin_1 = st.Page(
     "Super Admin/admin_1.py",
     title="Dataframe 3",
-    icon="🎱️"
-    default=(role == "Super Admin"),
+    icon="🎱️",
+    default=(role == "Super Admin")
 )
 admin_2 = st.Page("Super Admin/admin_2.py", title="Advanced Graphs & Charts")
 

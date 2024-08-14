@@ -61,10 +61,10 @@ admin_2 = st.Page("Super Admin/admin_2.py", title="Advanced Graphs & Charts")
 account_pages = [logout_page, about]
 user_pages = [request_1, request_2, request_3, request_4]
 admin_pages = [respond_1, respond_2]
-super_admin_pages = [admin_1, admin_2]
+super_admin_pages =[admin_1, admin_2]
 
 st.title("Nandi County Data App")
-#st.logo("images/logo2.png", icon_image="images/logo2.png")
+st.logo("images/logo2.png", icon_image="images/logo2.png")
 
 page_dict = {}
 if st.session_state.role in ["User", "Admin", "Super Admin"]:

@@ -1,5 +1,7 @@
 import streamlit as st
 
+st.set_page_config(page_title="Nandi App",
+                   page_icon="🌏️")
 
 if "role" not in st.session_state:
     st.session_state.role = None
@@ -37,7 +39,8 @@ request_2 = st.Page(
 )
 request_3 = st.Page(
     "User/request_3.py",
-    title="Graphs & Charts"
+    title="Graphs & Charts",
+    icon=""
 )
 request_4 = st.Page(
     "User/request_4.py",

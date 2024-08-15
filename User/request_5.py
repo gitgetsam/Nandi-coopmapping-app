@@ -12,8 +12,8 @@ selected_town = st.selectbox('Select the Town?', towns)
 
 if selected_town == None:
     main_df = main_df[main_df['Town'] == None] 
-if selected_town == 'Morisot':
-    main_df = main_df[main_df['Town'] == 'Morisot'] 
+if selected_town == 'Mosoriot':
+    main_df = main_df[main_df['Town'] == 'Mosoriot'] 
 if selected_town == 'Kapkerer':
     main_df = main_df[main_df['Town'] == 'Kapkerer'] 
 if selected_town == 'Kabiyet':

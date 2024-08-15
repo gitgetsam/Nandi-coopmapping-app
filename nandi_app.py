@@ -42,12 +42,17 @@ request_2 = st.Page(
 request_3 = st.Page(
     "User/request_3.py",
     title="Graphs & Charts",
-    icon="👉️"
+    icon="📊"
 )
 request_4 = st.Page(
     "User/request_4.py",
     title="Selection App",
-    icon="👌️"
+    icon="📶"
+)
+request_5 = st.Page(
+    "User/request_5.py",
+    title="Coops by Town",
+    icon="🌍"
 )
 respond_1 = st.Page(
     "Admin/respond_1.py",
@@ -67,7 +72,7 @@ admin_1 = st.Page(
 admin_2 = st.Page("Super Admin/admin_2.py", title="Advanced Graphs & Charts")
 
 account_pages = [logout_page, about]
-user_pages = [request_1, request_2, request_3, request_4]
+user_pages = [request_1, request_2, request_3, request_4, request_5]
 admin_pages = [respond_1, respond_2]
 super_admin_pages =[admin_1, admin_2]
 
